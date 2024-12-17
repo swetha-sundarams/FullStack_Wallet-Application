@@ -1,0 +1,30 @@
+fullstack-wallet-app/
+├── backend/                  # Express Backend
+│   ├── prisma/               # Prisma configurations
+│   │   ├── schema.prisma     # Database schema
+│   │   └── migrations/       # Auto-generated Prisma migrations
+│   ├── src/                  # Backend source code
+│   │   ├── app.js            # Main server entry point
+│   │   ├── middleware/
+│   │   │   └── authenticate.js # JWT middleware
+│   │   ├── routes/
+│   │   │   ├── auth.js       # Authentication routes
+│   │   │   ├── wallet.js     # Wallet routes
+│   │   │   ├── transaction.js # Transaction routes
+│   │   │   └── trpc.js       # tRPC integration
+│   └── package.json          # Backend dependencies
+├── mobile-app/               # React Native Mobile App
+│   ├── src/
+│   │   ├── App.js            # Main mobile app component
+│   │   ├── components/       # Reusable components
+│   │   │   ├── TransactionForm.js
+│   │   │   ├── BalanceDisplay.js
+│   │   │   └── TransactionList.js
+│   └── package.json          # Mobile app dependencies
+├── admin-app/                # Next.js Admin Panel
+│   ├── pages/                # Admin pages
+│   │   ├── index.js          # Admin dashboard
+│   │   ├── users.js          # Manage users
+│   │   └── wallets.js        # Manage wallets
+│   └── package.json          # Admin panel dependencies
+└── README.md                 # Documentation
